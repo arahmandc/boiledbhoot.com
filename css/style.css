@@ -1595,3 +1595,17 @@ textarea.input {
   border-color: #83ba09;
   background: #83ba09;
 }
+
+/*=========================================================
+  404 page
+===========================================================*/
+
+div#img404 {
+  margin: 20vh 0px 0px 0px;
+  padding: 200px 0px;
+  height: 80vh;
+  background-image: url("../img/404.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
