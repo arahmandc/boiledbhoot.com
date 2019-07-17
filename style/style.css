@@ -431,6 +431,7 @@ p {
     z-index: 1;
     background-position: bottom center;
     background-size: cover;
+    margin-bottom: 100px;
 }
 
 .wellcome_area:after {
