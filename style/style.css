@@ -330,6 +330,7 @@ p {
     z-index: 99;
     top: 0;
     padding: 0 4%;
+    background-color: #000;
 }
 
 .menu_area .navbar-brand {
@@ -398,7 +399,7 @@ p {
 /* stcicky css */
 
 .header_area.sticky {
-    background-color: #f24946;
+    background-color: #000;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 70px;
@@ -754,7 +755,7 @@ p {
 .cool_facts_area {
     position: relative;
     z-index: auto;
-    background: #f24946;
+    background: #000;
     /*background: -webkit-linear-gradient(to left, #7873ed, #f24946);
     background: -webkit-linear-gradient(right, #7873ed, #f24946);
     background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#f24946));
@@ -762,6 +763,9 @@ p {
     background: linear-gradient(to left, #7873ed, #f24946);*/
     /*padding: 180px 0 80px 0;*/
     top: -100px;
+    margin: 0 0 80px 0;
+    padding: 80px 0;
+    top: 0;
 }
 
 
@@ -1040,7 +1044,7 @@ p {
 -------------------------- */
 
 .our-monthly-membership {
-    background: #f24946;
+    background: #000;
     /*background: -webkit-linear-gradient(to left, #7873ed, #f24946);
     background: -webkit-linear-gradient(right, #7873ed, #f24946);
     background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#f24946));
@@ -1381,12 +1385,6 @@ footer img.logo {
     padding: 4px 0;
     height: 50px;
     display: block;
-}
-
-.cool_facts_area {
-    margin: 0 0 80px 0;
-    padding: 80px 0;
-    top: 0;
 }
 
 .collaborators-area {
