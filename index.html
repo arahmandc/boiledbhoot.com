@@ -241,8 +241,58 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-4">
+            <div class="row preview-row">
+                <script type="text/javascript">
+                    let getProjects = async (name) => {
+                        let res = await fetch(
+                            `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${name}`
+                        );
+                        return await res.json();
+                    };
+
+                    let row = document.getElementById("projects").querySelector(".preview-row");
+
+                    getProjects("boil-projects").then(data => {
+                        for (let c=0; c<3; ++c) {
+
+                            let column = document.createElement("div");
+                            column.classList.add("col-sm-6", "col-lg-4");
+
+                            let item = document.createElement("div");
+                            item.classList.add("single_blog_item");
+
+                            let image = document.createElement("div");
+                            image.classList.add("single_blog_img");
+                            let img = document.createElement("img");
+                            img.src = data.items[c].thumbnail;
+
+                            let text = document.createElement("div");
+                            text.classList.add("single_blog_text");
+                            let h3 = document.createElement("h3");
+                            h3.innerText = data.items[c].title;
+                            let p = document.createElement("p");
+                            p.innerText = "Lorem ipsum some some more some";
+                            let a = document.createElement("a");
+                            a.classList.add("btn_3");
+                            a.href = data.items[c].link;
+
+                            text.appendChild(h3);
+                            text.appendChild(p);
+                            text.appendChild(a);
+
+                            image.appendChild(img);
+
+                            item.appendChild(image);
+                            item.appendChild(text);
+
+                            column.appendChild(item);
+
+                            row.appendChild(column);
+
+                        }
+                    });
+                </script>
+                <!-- <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
                             <img src="image/food_item/food_item_1.png" alt="">
@@ -277,7 +327,7 @@
                             <a href="#" class="btn_3">Read More</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
