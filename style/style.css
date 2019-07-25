@@ -236,6 +236,7 @@ p {
     color: #f24946;
     font-size: 48px;
     margin: 0;
+    text-transform: capitalize;
 }
 
 
@@ -425,14 +426,15 @@ p {
 -------------------------- */
 
 .wellcome_area {
-    background-image: url("../image/bg-img/welcome-bg.png");
+    /*background-image: url("../image/bg-img/welcome-bg.png");*/
+    background-image: linear-gradient(#f24946 0%, #f24946 90%, #fff 91%, #fff 100%);
     min-height: 600px;
-    height: 92vh;
+    height: 100vh;
+    margin-top: 10vh;
     position: relative;
     z-index: 1;
     background-position: bottom center;
     background-size: cover;
-    margin-bottom: 100px;
 }
 
 .wellcome_area:after {
@@ -763,7 +765,7 @@ p {
     background: linear-gradient(to left, #7873ed, #f24946);*/
     /*padding: 180px 0 80px 0;*/
     top: -100px;
-    margin: 0 0 80px 0;
+    margin: 0;
     padding: 80px 0;
     top: 0;
 }
@@ -802,6 +804,7 @@ p {
     font-size: 18px;
     color: #ffffff;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 /* --------------------------
@@ -1348,13 +1351,22 @@ footer img.logo {
     margin-bottom: 10px;
 }
 
+#competencies {
+    padding-top: 100px;
+}
+
+#about {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
 #about .special_description_content {
     margin-top: 80px;
 }
 
 #projects {
     background-color: #fff;
-    padding: 0 0 80px 0;
+    padding: 80px 0;
 }
 
 #collaborators {
@@ -1366,9 +1378,27 @@ footer img.logo {
     visibility: hidden;
 }
 
+#designCredit {
+    position: absolute;
+    padding: 0 0 10px 10px;
+}
+
+#designCredit, 
+#designCredit a {
+    color: rgba(200, 200, 200, 1);
+}
+
+#designCredit a:hover {
+    color: rgba(100, 100, 100, 1);
+}
+
+#nav .nav-link:hover {
+    color: #f24946;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
     div#ca-navbar {
-        background-color: #f24946;
+        background-color: #000;
     }
 }
 
@@ -1383,7 +1413,7 @@ footer img.logo {
 
 .navbar-brand img.logo {
     padding: 4px 0;
-    height: 50px;
+    width: 200px;
     display: block;
 }
 
@@ -1967,6 +1997,24 @@ footer img.logo {
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    div#ca-navbar {
+        background-color: #000;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    header.header_area.sticky {
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header.header_area.sticky {
+        height: 70px;
+    }
+}
+
 /* line 166, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
 .blog_part .single-home-blog .card ul li span {
     margin-right: 10px;
@@ -1977,4 +2025,12 @@ footer img.logo {
     margin: 20px 0;
     padding: 15px;
     text-align: center;
+}
+
+button.navbar-toggler {
+    filter: invert(100%);
+}
+
+button.navbar-toggler:hover {
+    cursor: pointer;
 }
