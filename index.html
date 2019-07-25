@@ -558,7 +558,8 @@
 
                             let span = document.createElement("span");
                             span.innerText = " | ";
-                            span.innerText += blogData.items[c].pubDate;
+                            let date = blogData.items[c].pubDate.split(" ")[0];
+                            span.innerText += date;
 
                             let aBlog = document.createElement("a");
                             aBlog.classList.add("blog");
