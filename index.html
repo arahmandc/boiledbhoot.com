@@ -272,9 +272,15 @@
                             h3.innerText = data.items[c].title;
                             let p = document.createElement("p");
                             p.innerText = "Lorem ipsum some some more some";
+
                             let a = document.createElement("a");
                             a.classList.add("btn_3");
                             a.href = data.items[c].link;
+                            a.innerText = "Read more";
+                            let readMoreImg = document.createElement("img");
+                            readMoreImg.src = "image/icon/left_2.svg";
+
+                            a.appendChild(readMoreImg);
 
                             text.appendChild(h3);
                             text.appendChild(p);
