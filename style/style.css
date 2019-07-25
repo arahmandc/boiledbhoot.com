@@ -1325,6 +1325,10 @@ footer img.logo {
     visibility: hidden;
 }
 
+#blogs .card-body span.date {
+    margin-left: 5px;
+}
+
 #designCredit {
     position: absolute;
     padding: 0 0 10px 10px;

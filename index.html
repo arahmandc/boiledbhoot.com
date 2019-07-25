@@ -557,6 +557,7 @@
                             aTag.href = "#";
 
                             let span = document.createElement("span");
+                            span.classList.add("date");
                             span.innerText = " | ";
                             let date = blogData.items[c].pubDate.split(" ")[0];
                             span.innerText += date;
