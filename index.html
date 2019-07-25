@@ -242,7 +242,7 @@
         </div>
         <div class="container">
             <div class="row preview-row">
-                
+
                 <script type="text/javascript">
                     let getProjects = async (name) => {
                         let res = await fetch(
@@ -251,7 +251,7 @@
                         return await res.json();
                     };
 
-                    let row = document.getElementById("projects").querySelector(".preview-row");
+                    let projectRow = document.getElementById("projects").querySelector("div.preview-row");
 
                     getProjects("boil-projects").then(data => {
                         for (let c=0; c<3; ++c) {
@@ -259,8 +259,8 @@
                             let column = document.createElement("div");
                             column.classList.add("col-sm-6", "col-lg-4");
 
-                            let item = document.createElement("div");
-                            item.classList.add("single_blog_item");
+                            let single = document.createElement("div");
+                            single.classList.add("single_blog_item");
 
                             let image = document.createElement("div");
                             image.classList.add("single_blog_img");
@@ -283,18 +283,18 @@
 
                             image.appendChild(img);
 
-                            item.appendChild(image);
-                            item.appendChild(text);
+                            single.appendChild(image);
+                            single.appendChild(text);
 
-                            column.appendChild(item);
+                            column.appendChild(single);
 
-                            row.appendChild(column);
+                            projectRow.appendChild(column);
 
                         }
                     });
                 </script>
 
-                <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
+                <!-- <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
                             <img src="image/food_item/food_item_1.png" alt="">
@@ -305,7 +305,7 @@
                             <a href="#" class="btn_3">Read More</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -520,8 +520,93 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-4 col-xl-4 d-none d-sm-block d-lg-none">
+            <div class="row preview-row">
+
+                <script type="text/javascript">
+                    let getBlogs = async (name) => {
+                        let res = await fetch(
+                            `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${name}`
+                        );
+                        return await res.json();
+                    };
+
+                    let blogRow = document.getElementById("blogs").querySelector("div.preview-row");
+
+                    getBlogs("boil-projects").then(blogData => {
+                        for (let c=0; c<3; ++c) {
+
+                            let column = document.createElement("div");
+                            column.classList.add("col-sm-6", "col-lg-4", "col-xl-4");
+
+                            let single = document.createElement("div");
+                            single.classList.add("single-home-blog");
+
+                            let card = document.createElement("div");
+                            card.classList.add("card");
+
+                            let img = document.createElement("img");
+                            img.classList.add("card-img-top");
+                            img.src = blogData.items[c].thumbnail;
+
+                            let body = document.createElement("div");
+                            body.classList.add("card-body");
+
+                            let aTag = document.createElement("a");
+                            aTag.classList.add("tag");
+                            aTag.innerText = blogData.items[c].title;
+                            aTag.href = "#";
+
+                            let span = document.createElement("span");
+                            span.innerText = " | ";
+                            span.innerText += blogData.items[c].pubDate;
+
+                            let aBlog = document.createElement("a");
+                            aBlog.classList.add("blog");
+                            aBlog.href = blogData.items[c].link;
+                            let h5 = document.createElement("h5");
+                            h5.classList.add("card-title");
+                            h5.innerText = "Lorem ipsum title some";
+
+                            let ul = document.createElement("ul");
+
+                            let liComment = document.createElement("li");
+                            let spanComment = document.createElement("span");
+                            spanComment.classList.add("ti-comments");
+
+                            let liHeart = document.createElement("li");
+                            let spanHeart = document.createElement("span");
+                            spanHeart.classList.add("ti-heart");
+
+                            liHeart.appendChild(spanHeart);
+                            liComment.appendChild(spanComment);
+
+                            liComment.innerHTML += "0 comment";
+                            liHeart.innerHTML += "No heart";
+
+                            ul.appendChild(liComment);
+                            ul.appendChild(liHeart);
+
+                            aBlog.appendChild(h5);
+
+                            body.appendChild(aTag);
+                            body.appendChild(span);
+                            body.appendChild(aBlog);
+                            body.appendChild(ul);
+
+                            card.appendChild(img);
+                            card.appendChild(body);
+
+                            single.appendChild(card);
+
+                            column.appendChild(single);
+
+                            blogRow.appendChild(column);
+
+                        }
+                    });
+                </script>
+
+                <!-- <div class="col-sm-6 col-lg-4 col-xl-4 d-none d-sm-block d-lg-none">
                     <div class="single-home-blog">
                         <div class="card">
                             <img src="image/blog/blog_3.png" class="card-img-top" alt="blog">
@@ -537,8 +622,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-4">
+                </div> -->
+                <!-- <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
                             <img src="image/blog/blog_1.png" class="card-img-top" alt="blog">
@@ -554,8 +639,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-4">
+                </div> -->
+                <!-- <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
                             <img src="image/blog/blog_2.png" class="card-img-top" alt="blog">
@@ -588,7 +673,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
