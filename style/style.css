@@ -1308,7 +1308,23 @@ footer img.logo {
 }
 
 #about .special_description_content {
+    margin-top: 40px;
+}
+
+#about .special_description_img img {
     margin-top: 80px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #about .special_description_img img {
+        margin-top: 120px;
+    }
+}
+
+#about .text-container {
+    /*flex-basis: 50%;*/
+    text-align: justify;
+    /*max-width: 50%;*/
 }
 
 #projects {
