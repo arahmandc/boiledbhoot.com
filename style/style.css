@@ -676,6 +676,8 @@ p {
 
 .single-feature > p {
     margin-bottom: 0;
+    text-align: justify;
+    padding: 0 40px;
 }
 
 .single-feature > i {
