@@ -1338,6 +1338,18 @@ footer img.logo {
     visibility: hidden;
 }
 
+#subscribe .button-cont {
+    text-align: right;
+}
+
+#subscribe input[name="subscribe-email"] {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 25px 25px 25px 0;
+    line-height: 2rem;
+}
+
 #blogs .card-body span.date {
     margin-left: 5px;
 }
