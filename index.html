@@ -259,48 +259,50 @@
                     let projectRow = document.getElementById("projects").querySelector("div.preview-row");
 
                     getProjects("boil-projects").then(data => {
-                        for (let c=0; c<3; ++c) {
+                        if (data.items.length>0) {
+                            for (let c=0; c<3; ++c) {
 
-                            let column = document.createElement("div");
-                            column.classList.add("col-sm-6", "col-lg-4");
+                                let column = document.createElement("div");
+                                column.classList.add("col-sm-6", "col-lg-4");
 
-                            let single = document.createElement("div");
-                            single.classList.add("single_blog_item");
+                                let single = document.createElement("div");
+                                single.classList.add("single_blog_item");
 
-                            let image = document.createElement("div");
-                            image.classList.add("single_blog_img");
-                            let img = document.createElement("img");
-                            img.src = data.items[c].thumbnail;
+                                let image = document.createElement("div");
+                                image.classList.add("single_blog_img");
+                                let img = document.createElement("img");
+                                img.src = data.items[c].thumbnail;
 
-                            let text = document.createElement("div");
-                            text.classList.add("single_blog_text");
-                            let h3 = document.createElement("h3");
-                            h3.innerText = data.items[c].title;
-                            let p = document.createElement("p");
-                            p.innerText = "Lorem ipsum some some more some";
+                                let text = document.createElement("div");
+                                text.classList.add("single_blog_text");
+                                let h3 = document.createElement("h3");
+                                h3.innerText = data.items[c].title;
+                                let p = document.createElement("p");
+                                p.innerText = "Lorem ipsum some some more some";
 
-                            let a = document.createElement("a");
-                            a.classList.add("btn_3");
-                            a.href = data.items[c].link;
-                            a.innerText = "Read more";
-                            let readMoreImg = document.createElement("img");
-                            readMoreImg.src = "image/icon/left_2.svg";
+                                let a = document.createElement("a");
+                                a.classList.add("btn_3");
+                                a.href = data.items[c].link;
+                                a.innerText = "Read more";
+                                let readMoreImg = document.createElement("img");
+                                readMoreImg.src = "image/icon/left_2.svg";
 
-                            a.appendChild(readMoreImg);
+                                a.appendChild(readMoreImg);
 
-                            text.appendChild(h3);
-                            text.appendChild(p);
-                            text.appendChild(a);
+                                text.appendChild(h3);
+                                text.appendChild(p);
+                                text.appendChild(a);
 
-                            image.appendChild(img);
+                                image.appendChild(img);
 
-                            single.appendChild(image);
-                            single.appendChild(text);
+                                single.appendChild(image);
+                                single.appendChild(text);
 
-                            column.appendChild(single);
+                                column.appendChild(single);
 
-                            projectRow.appendChild(column);
+                                projectRow.appendChild(column);
 
+                            }
                         }
                     });
                 </script>
@@ -545,77 +547,79 @@
                     let blogRow = document.getElementById("blogs").querySelector("div.preview-row");
 
                     getBlogs("boil-projects").then(blogData => {
-                        for (let c=0; c<3; ++c) {
+                        if (blogData.items.length>0) {
+                            for (let c=0; c<3; ++c) {
 
-                            let column = document.createElement("div");
-                            column.classList.add("col-sm-6", "col-lg-4", "col-xl-4");
+                                let column = document.createElement("div");
+                                column.classList.add("col-sm-6", "col-lg-4", "col-xl-4");
 
-                            let single = document.createElement("div");
-                            single.classList.add("single-home-blog");
+                                let single = document.createElement("div");
+                                single.classList.add("single-home-blog");
 
-                            let card = document.createElement("div");
-                            card.classList.add("card");
+                                let card = document.createElement("div");
+                                card.classList.add("card");
 
-                            let img = document.createElement("img");
-                            img.classList.add("card-img-top");
-                            img.src = blogData.items[c].thumbnail;
+                                let img = document.createElement("img");
+                                img.classList.add("card-img-top");
+                                img.src = blogData.items[c].thumbnail;
 
-                            let body = document.createElement("div");
-                            body.classList.add("card-body");
+                                let body = document.createElement("div");
+                                body.classList.add("card-body");
 
-                            let aTag = document.createElement("a");
-                            aTag.classList.add("tag");
-                            aTag.innerText = blogData.items[c].categories[0];
-                            aTag.href = "#";
+                                let aTag = document.createElement("a");
+                                aTag.classList.add("tag");
+                                aTag.innerText = blogData.items[c].categories[0];
+                                aTag.href = "#";
 
-                            let span = document.createElement("span");
-                            span.classList.add("date");
-                            span.innerText = " | ";
-                            let date = blogData.items[c].pubDate.split(" ")[0];
-                            span.innerText += date;
+                                let span = document.createElement("span");
+                                span.classList.add("date");
+                                span.innerText = " | ";
+                                let date = blogData.items[c].pubDate.split(" ")[0];
+                                span.innerText += date;
 
-                            let aBlog = document.createElement("a");
-                            aBlog.classList.add("blog");
-                            aBlog.href = blogData.items[c].link;
-                            let h5 = document.createElement("h5");
-                            h5.classList.add("card-title");
-                            h5.innerText = "Lorem ipsum title some";
+                                let aBlog = document.createElement("a");
+                                aBlog.classList.add("blog");
+                                aBlog.href = blogData.items[c].link;
+                                let h5 = document.createElement("h5");
+                                h5.classList.add("card-title");
+                                h5.innerText = "Lorem ipsum title some";
 
-                            let ul = document.createElement("ul");
+                                let ul = document.createElement("ul");
 
-                            let liComment = document.createElement("li");
-                            let spanComment = document.createElement("span");
-                            spanComment.classList.add("ti-comments");
+                                let liComment = document.createElement("li");
+                                let spanComment = document.createElement("span");
+                                spanComment.classList.add("ti-comments");
 
-                            let liHeart = document.createElement("li");
-                            let spanHeart = document.createElement("span");
-                            spanHeart.classList.add("ti-heart");
+                                let liHeart = document.createElement("li");
+                                let spanHeart = document.createElement("span");
+                                spanHeart.classList.add("ti-heart");
 
-                            liHeart.appendChild(spanHeart);
-                            liComment.appendChild(spanComment);
+                                liHeart.appendChild(spanHeart);
+                                liComment.appendChild(spanComment);
 
-                            liComment.innerHTML += "0 comment";
-                            liHeart.innerHTML += "No heart";
+                                liComment.innerHTML += "0 comment";
+                                liHeart.innerHTML += "No heart";
 
-                            ul.appendChild(liComment);
-                            ul.appendChild(liHeart);
+                                ul.appendChild(liComment);
+                                ul.appendChild(liHeart);
 
-                            aBlog.appendChild(h5);
+                                aBlog.appendChild(h5);
 
-                            body.appendChild(aTag);
-                            body.appendChild(span);
-                            body.appendChild(aBlog);
-                            body.appendChild(ul);
+                                body.appendChild(aTag);
+                                body.appendChild(span);
+                                body.appendChild(aBlog);
+                                body.appendChild(ul);
 
-                            card.appendChild(img);
-                            card.appendChild(body);
+                                card.appendChild(img);
+                                card.appendChild(body);
 
-                            single.appendChild(card);
+                                single.appendChild(card);
 
-                            column.appendChild(single);
+                                column.appendChild(single);
 
-                            blogRow.appendChild(column);
+                                blogRow.appendChild(column);
 
+                            }
                         }
                     });
                 </script>
