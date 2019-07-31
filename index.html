@@ -747,11 +747,28 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn submit-btn">Send Now</button>
+                                        <!-- <button type="submit" class="btn submit-btn">Send Now</button> -->
+                                        <a id="sendMail" class="btn submit-btn" target="_blank">Send now</a>
                                     </div>
                                 </div>
                             </div>
                         </form>
+                        <script>
+                            let button  = document.getElementById("sendMail");
+                            button.addEventListener("click", function() {
+                                let form    = document.getElementById("contact").querySelector("form");
+                                let mailto  = "ask@boiledbhoot.org";
+                                let mail    = form.querySelector("#email").value;
+                                let subject = form.querySelector("#subject").value;
+                                let name    = form.querySelector("#name").value;
+                                let body    = "From: " + name + "%0D%0A" +
+                                    "Email: " + mail + "%0D%0A" +
+                                    "%0D%0A" +
+                                    form.querySelector("#message").value;
+                                console.log(body);
+                                button.href = "mailto:" + mailto + "?subject=" + subject + "&body=" + body;
+                            });
+                        </script>
                     </div>
                 </div>
             </div>

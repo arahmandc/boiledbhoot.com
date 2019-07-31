@@ -1150,6 +1150,10 @@ p {
     border-radius: 25px 25px 25px 0;
 }
 
+#sendMail {
+    line-height: 2rem;
+}
+
 .btn.submit-btn {
     background: #f24946;
     height: 48px;
@@ -1276,8 +1280,7 @@ a {
     outline: none;
 }
 
-input#name:focus, 
-input#email:focus, 
+#contact input:focus, 
 textarea#message:focus {
     border: 1px solid red;
     box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.3);
