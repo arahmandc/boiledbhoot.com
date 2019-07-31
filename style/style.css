@@ -1033,6 +1033,7 @@ p {
 
 .get-started-button {
     text-align: right;
+    display: inline-block;
 }
 
 /* --------------------------
@@ -1340,8 +1341,8 @@ footer img.logo {
 
 #subscribe input[name="subscribe-email"] {
     padding: 5px 10px;
-    margin-bottom: 20px;
-    width: 100%;
+    margin: 0 20px 20px 0;
+    width: 50%;
     border-radius: 25px 25px 25px 0;
     line-height: 2rem;
 }
