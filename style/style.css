@@ -1325,11 +1325,11 @@ footer img.logo {
     padding: 80px 0;
 }
 
-#collaborators {
+#collaborations {
     padding: 80px 0;
 }
 
-#collaborators .slick-dots {
+#collaborations .slick-dots {
     /*margin: 30px 0 0 0;*/
     visibility: hidden;
 }
