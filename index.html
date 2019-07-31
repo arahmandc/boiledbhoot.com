@@ -259,8 +259,9 @@
                     let projectRow = document.getElementById("projects").querySelector("div.preview-row");
 
                     getProjects("boil-projects").then(data => {
-                        if (data.items.length>0) {
-                            for (let c=0; c<3; ++c) {
+                        let l = data.items.length;
+                        if (l>0) {
+                            for (let c=0; c<(l>3?3:l); ++c) {
 
                                 let column = document.createElement("div");
                                 column.classList.add("col-sm-6", "col-lg-4");
@@ -547,8 +548,9 @@
                     let blogRow = document.getElementById("blogs").querySelector("div.preview-row");
 
                     getBlogs("boil-projects").then(blogData => {
-                        if (blogData.items.length>0) {
-                            for (let c=0; c<3; ++c) {
+                        let l = blogData.items.length;
+                        if (l>0) {
+                            for (let c=0; c<(l>3?3:l); ++c) {
 
                                 let column = document.createElement("div");
                                 column.classList.add("col-sm-6", "col-lg-4", "col-xl-4");
