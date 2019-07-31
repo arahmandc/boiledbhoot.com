@@ -1281,6 +1281,7 @@ a {
     outline: none;
 }
 
+input:focus, 
 #contact input:focus, 
 textarea#message:focus {
     border: 1px solid red;
