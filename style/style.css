@@ -34,6 +34,13 @@
 @import 'font-awesome.min.css';
 @import 'themify-icons.css';
 
+@keyframes sotm {
+    5% { background-size: 80px auto; }
+    10% { background-size: 70px auto; }
+    15% { background-size: 80px auto; }
+    20% { background-size: 70px auto; }
+}
+
 /* --------------------------
 :: 1.0 Base CSS Start
 -------------------------- */
@@ -1312,19 +1319,20 @@ footer img.logo {
 
 #announcement::after {
     content: '';
-    background-image: url('../image/icon/bell.png');
-    background-size: 30px auto;
+    background-image: url('../image/sotm.png');
+    background-size: 70px auto;
     background-repeat: no-repeat;
-    background-position: 80% center;
+    background-position: 55% center;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 0 50% 50% 0;
     background-color: inherit;
     position: absolute;
     height: 100%;
-    width: 100px;
+    width: 110px;
     margin-right: -50px;
-    right: 0;
+    right: -40px;
     top: 0;
+    animation: sotm 4s infinite;
 }
 
 #announcement:hover {
@@ -1355,7 +1363,7 @@ footer img.logo {
 }
 
 #announcement .button-cont {
-    margin: 20px;
+    margin: 30px;
 }
 
 #competencies {
