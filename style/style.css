@@ -375,11 +375,11 @@ p {
     color: #f24946;
 }
 
-.sing-up-button {
+.button-type-1 {
     text-align: right;
 }
 
-.sing-up-button > a {
+.button-type-1 > a {
     color: #fff;
     font-weight: 500;
     display: inline-block;
@@ -391,7 +391,7 @@ p {
     border-radius: 24px 24px 24px 0px;
 }
 
-.sing-up-button > a:hover {
+.button-type-1 > a:hover {
     background: #fff;
     color: #f24946;
     border-color: transparent;
@@ -1015,7 +1015,7 @@ p {
     margin-bottom: 0;
 }
 
-.get-started-button > a {
+.button-type-2 > a {
     background: #ffffff;
     height: 45px;
     min-width: 155px;
@@ -1027,7 +1027,7 @@ p {
     border-radius: 23px 23px 23px 0;
 }
 
-.get-started-button > a:hover {
+.button-type-2 > a:hover {
     background: #d91916;
     color: #fff;
     -webkit-transition-duration: 500ms;
@@ -1035,7 +1035,7 @@ p {
     transition-duration: 500ms;
 }
 
-.get-started-button {
+.button-type-2 {
     text-align: right;
     display: inline-block;
 }
@@ -1297,6 +1297,65 @@ textarea#message:focus {
 footer img.logo {
     width: 15%;
     margin-bottom: 10px;
+}
+
+#announcement {
+    background-color: #f24946;
+    bottom: 50px;
+    box-shadow: 0px 0px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    z-index: 2147483647;
+    left: -100%;
+    transition: left 1.5s ease 0.5s;
+}
+
+#announcement::after {
+    content: '';
+    background-image: url('../image/icon/bell.png');
+    background-size: 30px auto;
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    margin-right: -50px;
+    right: 0;
+    top: 0;
+}
+
+#announcement:hover {
+    transition: left 1.5s ease 0s;
+    left: 0;
+}
+
+#announcement div.part {
+    text-align: center;
+}
+
+#announcement div.text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#announcement div.text a {
+    color: #fff;
+}
+
+#announcement div.text a:hover {
+    font-size: 1.25em;
+}
+
+#announcement .button-type-1 {
+    display: inline-block;
+}
+
+#announcement .button-cont {
+    margin: 20px;
 }
 
 #competencies {
