@@ -391,11 +391,10 @@ p {
     font-weight: 500;
     display: inline-block;
     border: 1px solid #fff;
-    height: 50px;
-    min-width: 178px;
     line-height: 46px;
     text-align: center;
     border-radius: 24px 24px 24px 0px;
+    padding: 0 10px;
 }
 
 .button-type-1 > a:hover {
