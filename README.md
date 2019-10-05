@@ -1,3 +1,3 @@
-# boiledbhoot.org
+# boiledbhoot.com
 
-Test site available at: https://bangladeshopeninnovationlab.github.io/boiledbhoot.org
+Test site available at: https://bangladeshopeninnovationlab.github.io/boiledbhoot.com
