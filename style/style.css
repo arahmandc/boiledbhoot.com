@@ -1306,7 +1306,7 @@ footer img.logo {
 }
 
 #announcement {
-    background-color: #f24946;
+    background-color: #fdfdfd;
     bottom: 50px;
     box-shadow: 0px 0px 5px 0px #444;
     position: fixed;
@@ -2080,4 +2080,61 @@ button.navbar-toggler {
 
 button.navbar-toggler:hover {
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+#popup {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+}
+
+#popup div.content {
+    /*padding: 30px;*/
+    border-radius: 10px;
+    background-color: #fff;
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    height: calc(100% - calc(40px * 2));
+    box-shadow: 0px 0px 30px 0 #000;
+}
+
+#popup img {
+    border-radius: 10px;
+}
+
+#popup span.icon.cross:hover {
+    cursor: pointer;
+}
+
+#popup span.icon.cross::after {
+    position: absolute;
+    border-radius: 50%;
+    right: 20px;
+    top: 15px;
+    content: '\00d7';
+    font-size: 50px;
+    line-height: 45px;
+    text-align: center;
+    color: #000;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 10px 0 #000;*/
 }
