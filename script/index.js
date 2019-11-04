@@ -8,9 +8,6 @@ popUpCross.addEventListener('click', function () {
     setTimeout(function () {
         announcementSneakPeek(1);
     }, 1000);
-    setTimeout(function () {
-        announcementSneakPeek(0);
-    }, 6000);
 });
 
 
@@ -20,13 +17,4 @@ popUpCross.addEventListener('click', function () {
 function closePopup() {
     let popUp = document.getElementById('popup');
     popUp.style.display = "none";
-}
-
-
-
-
-
-function announcementSneakPeek(show) {
-    let banner = document.getElementById('announcement');
-    banner.style.left = show ? "0" : "";
 }
