@@ -2031,7 +2031,6 @@ button.navbar-toggler:hover {
 
 
 #popup {
-    --border-rad: 7px;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -2045,7 +2044,6 @@ button.navbar-toggler:hover {
 #popup div.content {
     --margin-t: 110px;
     margin-top: var(--margin-t);
-    border-radius: var(--border-rad);
     background-color: #fff;
     display: inline-block;
     right: -20px;
@@ -2056,7 +2054,7 @@ button.navbar-toggler:hover {
 }
 
 #popup img {
-    border-radius: calc(var(--border-rad) * 2);
+    border-radius: 0;
 }
 
 #popup span.icon.cross:hover {
