@@ -2077,3 +2077,7 @@ button.navbar-toggler:hover {
     background-color: rgba(0, 0, 0, 0.2);
     /*box-shadow: 0 0 10px 0 #000;*/
 }
+
+.hidden {
+    display: none;
+}
