@@ -2081,3 +2081,50 @@ button.navbar-toggler:hover {
 .hidden {
     display: none;
 }
+
+#announcement {
+    background-color: #f24946;
+    bottom: 60px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 2147483647;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+#announcement .row {
+    display: flex;
+    align-items: center;
+}
+
+#announcement .col-xs-12 {
+    margin: 10px 0;
+}
+
+#announcement .row .title {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: all 0.5s ease;
+}
+
+#announcement .row .title:hover {
+    font-size: 1.4em;
+}
+
+#announcement a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#announcement a.button-2 {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+}
+
+#announcement a.button-2:hover {
+    background-color: #fff;
+    color: #f24946;
+}
+
