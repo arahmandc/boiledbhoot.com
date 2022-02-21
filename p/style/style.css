@@ -1,0 +1,2130 @@
+/* --------------------------
+:: Template Name: Colorlib App - App Landing Page 
+:: Template Author: Colorlib
+:: Template Author URI: https://colorlib.com/
+:: Description: Colorlib is a One Page based App Landing Template. It's very clean, creative & beautiful. It's super     responsive & ultra light.
+:: Tags: Colorlib, App Landing, Apps, Responsive App Landing, Bootstrap 4, Free Theme, Free HTML Template, HTML5 Template etc.
+:: Version: v1.0
+:: Created: 11/03/2017
+-------------------------- */
+
+/* --- [Master Stylesheet] ----
+:: 1.0 Base CSS Start
+:: 2.0 Header Area CSS
+:: 3.0 Wellcome Area CSS
+:: 4.0 Special Area CSS
+:: 5.0 Features Area CSS
+:: 6.0 Video Area CSS
+:: 7.0 Cool Facts Area CSS
+:: 8.0 Screenshots Area CSS
+:: 9.0 Pricing Plan Area CSS
+:: 10.0 Testimonials Area CSS
+:: 11.0 CTA Area CSS Start
+:: 12.0 Team Area CSS Start
+:: 13.0 Contact Area CSS Start
+:: 14.0 Footer Area CSS Start
+-------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700');
+@import 'bootstrap.min.css';
+@import 'animate.css';
+@import 'magnific-popup.css';
+@import 'owl.carousel.min.css';
+@import 'slick.css';
+@import 'font-awesome.min.css';
+@import 'themify-icons.css';
+
+@keyframes sotm {
+    5% { background-size: 80px auto; }
+    10% { background-size: 70px auto; }
+    15% { background-size: 80px auto; }
+    20% { background-size: 70px auto; }
+}
+
+/* --------------------------
+:: 1.0 Base CSS Start
+-------------------------- */
+
+:root {
+    --theme-color-2: #6d6d6d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    color: #f24946;
+    line-height: 1.2;
+}
+
+.section_padding_100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section_padding_100_50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section_padding_100_70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.section_padding_50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section_padding_50_20 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.section_padding_150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.section_padding_200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section_padding_0_100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section_padding_70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section_padding_0_50 {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+#scrollUp {
+    bottom: 0;
+    font-size: 24px;
+    right: 30px;
+    width: 50px;
+    background-color: #f24946;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: #726a84;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.heading-text > p {
+    font-size: 16px;
+}
+
+.section-heading > h2 {
+    font-weight: 300;
+    color: #f24946;
+    font-size: 48px;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+.line-shape-white,
+.line-shape {
+    width: 80px;
+    height: 2px;
+    background-color: #fc9c9a;
+    margin-top: 15px;
+}
+
+.line-shape {
+    margin-left: calc(50% - 40px);
+}
+
+.table {
+    display: table;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#preloader {
+    overflow: hidden;
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.colorlib-load {
+    -webkit-animation: 2000ms linear 0s normal none infinite running colorlib-load;
+    animation: 2000ms linear 0s normal none infinite running colorlib-load;
+    background: transparent none repeat scroll 0 0;
+    border-color: #dddddd #dddddd #f24946;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    height: 40px;
+    left: calc(50% - 20px);
+    position: relative;
+    top: calc(50% - 20px);
+    width: 40px;
+    z-index: 9;
+}
+
+@-webkit-keyframes colorlib-load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes colorlib-load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------------------
+:: 2.0 Header Area CSS
+-------------------------- */
+
+.header_area {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 4%;
+    background-color: var(--theme-color-2);
+}
+
+.menu_area .navbar-brand {
+    font-size: 60px;
+    /*font-weight: 700;*/
+    font-style: italic;
+    color: #fff;
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+}
+
+.menu_area .navbar-brand:hover,
+.menu_area .navbar-brand:focus {
+    color: #fff;
+}
+
+
+.menu_area {
+    position: relative;
+    z-index: 2;
+}
+
+.menu_area #nav .nav-link {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    padding: 35px 15px;
+}
+
+
+.menu_area nav ul li > a:hover {
+    color: #f24946;
+}
+
+.button-type-1 {
+    text-align: right;
+}
+
+.button-type-1 > a {
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid #fff;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 24px 24px 24px 0px;
+    padding: 0 10px;
+}
+
+.button-type-1 > a:hover {
+    background: #fff;
+    color: #f24946;
+    border-color: transparent;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+/* stcicky css */
+
+.header_area.sticky {
+    background-color: var(--theme-color-2);
+    -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.header_area.sticky .menu_area .navbar-brand {
+    font-size: 40px;
+}
+
+.header_area.sticky .menu_area #nav .nav-link {
+    padding: 23px 15px;
+}
+.header_area.sticky .navbar {
+    padding: 0;
+}
+
+
+/* --------------------------
+:: 3.0 Wellcome Area CSS
+-------------------------- */
+
+.wellcome_area {
+    /*background-image: url("../image/bg-img/welcome-bg.png");*/
+    background-image: linear-gradient(#f24946 0%, #f24946 90%, #fff 91%, #fff 100%);
+    min-height: 600px;
+    height: 100vh;
+    margin-top: 10vh;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.wellcome_area:after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    bottom: 0;
+    z-index: 2;
+}
+
+.welcome-thumb {
+    width: 45%;
+    /*position: absolute;*/
+    /*bottom: -130px;*/
+    /*right: 85px;*/
+    z-index: 9;
+    text-align: right;
+}
+
+.welcome-thumb img {
+    height: auto;
+    width: 70%;
+    margin-right: 30px;
+}
+
+.wellcome-heading > h2 {
+    margin-top: 100px;
+    font-size: 60px;
+    font-style: italic;
+    color: #ffffff;
+    /*font-weight: 700;*/
+    position: relative;
+    z-index: 3;
+}
+
+.get-start-area .email {
+    background: #9572e8;
+    height: 50px;
+    max-width: 260px;
+    border: none;
+    border-radius: 24px;
+    padding: 0px 15px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #fc9c9a;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #fc9c9a;
+    opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #fc9c9a;
+    opacity: 1;
+}
+
+.form-control::placeholder {
+    color: #fc9c9a;
+    opacity: 1;
+}
+
+.get-start-area .email:focus {
+    border: none;
+    outline-offset: transparent !important;
+    border-radius: 30px;
+}
+
+.get-start-area .submit {
+    background-color: #f24946;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    height: 50px;
+    min-width: 167px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 24px 24px 24px 0px;
+    margin-left: 10px;
+}
+
+.get-start-area .submit:hover {
+    background: #6f52e5;
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.wellcome-heading > p {
+    color: #fff;
+}
+
+.wellcome-heading > h3 {
+    font-size: 100px;
+    position: absolute;
+    top: -28px;
+    font-weight: 900;
+    left: -12px;
+    z-index: -1;
+    color: #fff;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+}
+
+.wellcome-heading {
+    margin-bottom: 100px;
+}
+
+/* --------------------------
+:: 4.0 Special Area CSS
+-------------------------- */
+
+.single-icon > i {
+    font-size: 36px;
+    color: #f24946;
+}
+
+.single-special > h4 {
+    font-size: 22px;
+    color: #f24946;
+}
+
+.single-icon {
+    margin-bottom: 25px;
+}
+
+.single-special > h4 {
+    font-size: 22px;
+    color: #f24946;
+    margin-bottom: 15px;
+}
+
+.single-special {
+    border: 1px solid #eff2f6;
+    padding: 40px;
+    border-radius: 40px 40px 40px 0px;
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+    margin-bottom: 30px;
+}
+
+.special_description_content > h2 {
+    color: #f24946;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.single-special:hover {
+    -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+}
+
+.single-special p {
+    margin-bottom: 0;
+}
+
+.app-download-area {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 1;
+    flex-basis: 1;
+    margin-top: 50px;
+}
+
+.app-download-btn a {
+    border: 1px solid #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 30px 30px 30px 0;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.app-download-btn.active a,
+.app-download-btn a:hover {
+    border-color: transparent;
+    background-color: #f24946;
+}
+
+.app-download-btn a i {
+    color: #47425d;
+    font-size: 24px;
+    margin-right: 15px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.app-download-btn a p {
+    font-size: 16px;
+    line-height: 1;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.app-download-btn a p span {
+    font-size: 12px;
+    display: block;
+}
+
+.app-download-btn:first-child {
+    margin-right: 20px;
+}
+
+.app-download-btn a:hover i,
+.app-download-btn.active a i,
+.app-download-btn.active a p,
+.app-download-btn a:hover p {
+    color: #fff;
+}
+
+/* --------------------------
+:: 5.0 Features Area CSS
+-------------------------- */
+
+.single-feature {
+    margin-bottom: 50px;
+}
+
+.single-feature > p {
+    margin-bottom: 0;
+    text-align: justify;
+    padding: 0 40px;
+}
+
+.single-feature > i {
+    color: #f24946;
+    font-size: 30px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.single-feature > h5 {
+    font-size: 22px;
+    color: #f24946;
+}
+
+.single-feature > p {
+    margin-top: 15px;
+}
+
+/* --------------------------
+:: 7.0 Cool Facts Area CSS
+-------------------------- */
+
+.cool_facts_area {
+    position: relative;
+    z-index: auto;
+    background-color: var(--theme-color-2);
+    /*background: -webkit-linear-gradient(to left, #7873ed, #f24946);
+    background: -webkit-linear-gradient(right, #7873ed, #f24946);
+    background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#f24946));
+    background: -o-linear-gradient(right, #7873ed, #f24946);
+    background: linear-gradient(to left, #7873ed, #f24946);*/
+    top: -100px;
+    margin: 0;
+    top: 0;
+}
+
+
+.cool_facts_area:after {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    content: ''
+}
+
+.cool-facts-content > i {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.counter-area {
+    /*min-width: 80px;*/
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+.counter-area > h3 {
+    color: #ffffff;
+    font-size: 60px;
+    margin-bottom: 0;
+    padding-right: 20px;
+    line-height: 1;
+}
+
+.cool-facts-content > p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* --------------------------
+:: 8.0 Screenshots Area CSS
+-------------------------- */
+
+.app_screenshots_slides {
+    padding: 0 6%;
+}
+
+.app_screenshots_slides .single-shot {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85)
+}
+
+.app_screenshots_slides .center .single-shot {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+.app-screenshots-area .owl-dot {
+    height: 11px;
+    width: 11px;
+    border: 2px solid #a49fba;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+    margin-top: 50px;
+}
+
+.app-screenshots-area .owl-dot.active {
+    background-color: #f24946;
+    border: transparent;
+}
+
+.app-screenshots-area .owl-dots {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+/* --------------------------
+:: 9.0 Pricing Plan Area CSS
+-------------------------- */
+
+.pricing-plane-area {
+    background: #f5f9fc;
+}
+
+.single-price-plan {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 30px 30px 30px 0;
+    margin-bottom: 30px;
+}
+
+.single-price-plan .package-plan {
+    padding: 40px 0;
+    border-radius: 30px 30px 0 0;
+}
+
+.single-price-plan .package-plan > h5 {
+    color: #f24946;
+    font-size: 18px;
+}
+
+
+.single-price-plan .package-plan .ca-price h4 {
+    color: #f24946;
+    font-size: 48px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.single-price-plan .package-plan .ca-price span {
+    font-size: 18px;
+    color: #f24946;
+}
+
+.single-price-plan .plan-button > a {
+    background: #726a84;
+    padding: 10px 0;
+    border-bottom-right-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.single-price-plan .package-description > p {
+    margin-bottom: 0;
+    line-height: 1;
+    padding: 15px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.single-price-plan .package-description > p:first-child {
+    border-top: 1px solid #ebebeb;
+}
+
+.single-price-plan.active .package-plan,
+.single-price-plan.active .plan-button > a,
+.single-price-plan:hover .plan-button > a {
+    background-color: #f24946;
+}
+
+.single-price-plan.active .package-plan .ca-price > h4,
+.single-price-plan.active .package-plan .ca-price > span,
+.single-price-plan.active .package-plan > h5,
+.single-price-plan.active .plan-button > a {
+    color: #fff;
+}
+
+/* --------------------------
+:: 10.0 Testimonials Area CSS
+-------------------------- */
+
+.clients-feedback-area .client-name > h5 {
+    color: #f24946;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.clients-feedback-area .star-icon > i {
+    font-size: 18px;
+    color: #f1b922;
+}
+
+.clients-feedback-area .client-description > p {
+    max-width: 1010px;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.clients-feedback-area .client > i {
+    font-size: 48px;
+    color: #f24946;
+    margin-bottom: 30px;
+}
+
+.clients-feedback-area .client-name > p {
+    color: #b5aec4;
+}
+
+.slick-dots {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.slick-dots li button {
+    width: 12px;
+    height: 12px;
+    text-indent: -999999999999999999999999px;
+    border: 3px solid #a49fba;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5.5px;
+    outline: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #f24946;
+    border-color: #f24946;
+}
+
+.clients-feedback-area .slick-slide.client-thumbnail {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 129px;
+}
+
+
+.clients-feedback-area .slick-slide img {
+    display: block;
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.clients-feedback-area .slick-slide.slick-current img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.slick-arrow {
+    position: absolute;
+    width: 30px;
+    background-color: #fff;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #b5aec4;
+    display: block;
+    line-height: 550%;
+    left: 0;
+    z-index: 90;
+    cursor: pointer;
+}
+
+.slick-arrow.fa-angle-right {
+    left: auto;
+    right: 0;
+    top: 0;
+}
+
+/* --------------------------
+:: 11.0 CTA Area CSS Start
+-------------------------- */
+
+.our-monthly-membership {
+    background-color: var(--theme-color-2);
+    /*background: -webkit-linear-gradient(to left, #7873ed, #f24946);
+    background: -webkit-linear-gradient(right, #7873ed, #f24946);
+    background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#f24946));
+    background: -o-linear-gradient(right, #7873ed, #f24946);
+    background: linear-gradient(to left, #7873ed, #f24946);*/
+}
+
+.membership-description > h2 {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.membership-description > p {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.button-type-2 > a {
+    background: #ffffff;
+    height: 45px;
+    min-width: 155px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    color: #f24946;
+    font-weight: 500;
+    border-radius: 23px 23px 23px 0;
+}
+
+.button-type-2 > a:hover {
+    background: #d91916;
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.button-type-2 {
+    text-align: right;
+    display: inline-block;
+}
+
+/* --------------------------
+:: 12.0 Team Area CSS Start
+-------------------------- */
+
+.member-image {
+    margin-bottom: 30px;
+    border-radius: 30px 30px 30px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.member-image img {
+    border-radius: 30px 30px 30px 0;
+}
+
+.member-text > h4 {
+    font-size: 22px;
+    color: #f24946;
+}
+
+.member-text > p {
+    color: #b5aec4;
+    margin-bottom: 0;
+}
+
+.team-hover-effects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 75, 228, 0.8);
+    border-radius: 30px 30px 30px 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.single-team-member:hover .team-hover-effects {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.team-social-icon {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.team-social-icon > a {
+    font-size: 14px;
+    color: #fff;
+    background: #9a81d7;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px 10px 10px 0;
+    display: block;
+    margin: 2.5px;
+}
+
+.single-team-member {
+    margin-bottom: 50px;
+}
+
+/* --------------------------
+:: 13.0 Contact Area CSS Start
+-------------------------- */
+
+.address-text > p,
+.phone-text > p,
+.email-text > p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.address-text > p > span,
+.phone-text > p > span,
+.email-text > p > span {
+    color: #f24946;
+}
+
+.footer-contact-area .line-shape {
+    margin-left: 0;
+}
+
+.footer-contact-area .heading-text > p {
+    margin-top: 50px;
+}
+
+.footer-contact-area .heading-text {
+    margin-bottom: 50px;
+}
+
+#contact input {
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px 25px 25px 0;
+}
+
+#sendMail {
+    line-height: 2rem;
+    color: #fff;
+}
+
+.btn.submit-btn {
+    background: #f24946;
+    height: 48px;
+    min-width: 185px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 22px 25px 22px 0;
+}
+
+.btn.submit-btn:hover {
+    cursor: pointer;
+    background: #f91916;
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.footer-contact-area {
+    background: #f5f9fc;
+}
+
+.footer-text > p {
+    margin-bottom: 50px;
+}
+
+/* --------------------------
+:: 14.0 Footer Area CSS Start
+-------------------------- */
+
+.footer-text > h2 {
+    color: #f24946;
+    font-size: 60px;
+    /*font-weight: 700;*/
+}
+
+.footer-social-icon > a > i {
+    background: #726a84;
+    font-size: 14px;
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    border-radius: 10px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+.footer-social-icon > a > i:hover {
+    background: #f24946;
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.social-icon {
+    margin-bottom: 30px;
+}
+
+.footer-text {
+    margin-bottom: 15px;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+}
+
+.footer-menu ul li a {
+    border-right: 2px solid #726a84;
+    display: block;
+    padding: 0 7.5px;
+    color: #726a84;
+}
+
+.footer-social-icon > a:last-child > i {
+    margin-right: 0;
+}
+
+.footer-social-icon > a .active {
+    background: #f24946;
+}
+
+.footer-menu ul li:last-child a {
+    border-right: 0 solid #ddd;
+}
+
+.footer-social-icon {
+    margin-bottom: 30px;
+}
+
+.footer-menu {
+    margin-bottom: 15px;
+}
+
+.copyright-text > p {
+    margin-bottom: 0;
+}
+
+.copyright-text > p > a {
+    color: #f24946;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+:: Overrides
+-------------------------- */
+
+a {
+    outline: none;
+}
+
+input:focus, 
+#contact input:focus, 
+textarea#message:focus {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.3);
+}
+
+footer img.logo {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+#competencies {
+    padding-top: 100px;
+}
+
+#about {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+#about .special_description_content {
+    margin-top: 40px;
+}
+
+#about .special_description_img img {
+    margin-top: 80px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #about .special_description_img img {
+        margin-top: 120px;
+    }
+}
+
+#about .text-container {
+    /*flex-basis: 50%;*/
+    text-align: justify;
+    /*max-width: 50%;*/
+}
+
+#projects {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+#collaborations {
+    padding-top: 80px;
+}
+
+#collaborations .slick-dots {
+    /*margin: 30px 0 0 0;*/
+    visibility: hidden;
+}
+
+#subscribe .button-cont {
+    text-align: right;
+}
+
+#subscribe input[name="subscribe-email"] {
+    padding: 5px 10px;
+    margin: 0 20px 20px 0;
+    width: 50%;
+    border-radius: 25px 25px 25px 0;
+    line-height: 2rem;
+}
+
+#blogs .card-body span.date {
+    margin-left: 5px;
+}
+
+#designCredit {
+    position: absolute;
+    padding: 0 0 10px 10px;
+}
+
+#designCredit, 
+#designCredit a {
+    color: rgba(200, 200, 200, 1);
+}
+
+#designCredit a:hover {
+    color: rgba(100, 100, 100, 1);
+}
+
+#nav .nav-link:hover {
+    color: #f24946;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    div#ca-navbar {
+        background-color: var(--theme-color-2);
+    }
+}
+
+.wellcome-heading > h3:nth-of-type(2) {
+    top: 46px;
+    ;/*###*/
+}
+
+.wellcome-heading > h3:nth-of-type(3) {
+    top: 120px;
+}
+
+.navbar-brand img.logo {
+    padding: 4px 0;
+    width: 200px;
+    display: block;
+}
+
+.collaborators-area {
+    background-color: #fff;
+}
+
+.collaborators-area .col-3 {
+    padding: 0;
+    display: initial;
+}
+
+.collaborators-area .col-3 img {
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+    /* line 2, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_exclusive_item_part.scss */
+    .exclusive_item_part {
+        padding-top: 70px;
+        margin-bottom: -20px;
+    }
+    /* line 31, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_exclusive_item_part.scss */
+    .exclusive_item_part .single_blog_item {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 2, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_exclusive_item_part.scss */
+    .exclusive_item_part {
+        padding-top: 70px;
+        margin-bottom: -20px;
+    }
+    /* line 38, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_exclusive_item_part.scss */
+    .exclusive_item_part .single_blog_item {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 2, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_exclusive_item_part.scss */
+    .exclusive_item_part {
+        padding-top: 70px;
+        margin-bottom: -20px;
+    }
+    /* line 45, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_exclusive_item_part.scss */
+    .exclusive_item_part .single_blog_item {
+        margin-bottom: 20px;
+    }
+}
+
+.chefs_part .single_blog_item h3 {
+    margin-bottom: 12px !important;
+}
+
+/* line 8, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_chefs_part.scss */
+.chefs_part .single_blog_item .social_icon {
+    margin-top: 35px;
+}
+
+@media (max-width: 576px) {
+    /* line 8, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_chefs_part.scss */
+    .chefs_part .single_blog_item .social_icon {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 8, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_chefs_part.scss */
+    .chefs_part .single_blog_item .social_icon {
+        margin-top: 15px;
+    }
+}
+
+/* line 22, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_chefs_part.scss */
+.chefs_part .single_blog_item .social_icon a {
+    border: 1px solid #e2e5e7;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: inline-block;
+    color: #949798;
+    line-height: 37px;
+    margin: 0px 8px;
+}
+
+@media (max-width: 576px) {
+    /* line 22, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_chefs_part.scss */
+    .chefs_part .single_blog_item .social_icon a {
+        margin: 0px 5px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 22, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_chefs_part.scss */
+    .chefs_part .single_blog_item .social_icon a {
+        margin: 0px 5px;
+    }
+}
+
+/* line 43, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_chefs_part.scss */
+.chefs_part .single_blog_item .social_icon a:hover {
+    background-color: #f24946;
+    color: #fff !important;
+    border: 1px solid #f24946;
+}
+
+@media (max-width: 576px) {
+    /* line 3, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_item {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 3, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_item {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 3, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_item {
+        margin-bottom: 20px;
+    }
+}
+
+/* line 17, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .single_blog_text {
+    border: 1px solid transparent;
+    box-shadow: 0px 15px 30px rgba(115, 113, 127, 0.1);
+    background-color: #fff;
+}
+
+/* line 23, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .btn_3 {
+    color: #f24946;
+}
+
+/* line 25, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .btn_3 a {
+    color: #f24946;
+}
+
+/* line 28, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .btn_3 img {
+    transform: rotateX(-180deg);
+    margin-bottom: 7px;
+}
+
+/* line 36, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_img img {
+    width: 100%;
+}
+
+/* line 17, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .single_blog_text {
+    border: 1px solid transparent;
+    box-shadow: 0px 15px 30px rgba(115, 113, 127, 0.1);
+    background-color: #fff;
+}
+
+/* line 40, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_text {
+    padding: 40px 30px;
+    border: 1px solid #e7e7e7;
+    /*border-radius: 100px 0px 623px 77px / 0px 50px 128px 58px;*/
+    border-radius: 0 0 40px 0;
+    background-color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+    /* line 40, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_text {
+        padding: 20px 15px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 40, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_text {
+        padding: 20px 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 40, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_text {
+        padding: 25px 15px;
+    }
+}
+
+/* line 60, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    /* line 60, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_text h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 60, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_text h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 60, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_item_section .single_blog_text h3 {
+        font-size: 20px;
+    }
+}
+
+/* line 79, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_item_section .single_blog_text .btn_3 {
+    color: #2c3033;
+    margin-top: 28px;
+    text-transform: capitalize;
+}
+
+/* line 89, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_section .single_blog_text .date .date_item {
+    color: #2c3033;
+    font-size: 15px;
+    margin-right: 19px;
+}
+
+/* line 93, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_section .single_blog_text .date .date_item span {
+    color: #f24946;
+}
+
+/* line 98, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_section .single_blog_text h3 {
+    font-size: 24px;
+    color: #2c3033;
+    line-height: 1.458;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/* line 105, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_section .single_blog_text h3 a {
+    color: #2c3033;
+}
+
+@media (max-width: 576px) {
+    /* line 98, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_section .single_blog_text h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 98, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+    .blog_section .single_blog_text h3 {
+        font-size: 20px;
+    }
+}
+
+/* line 121, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_section .single_blog_text .btn_3 {
+    margin-top: 25px;
+}
+
+/* line 123, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
+.blog_section .single_blog_text .btn_3 img {
+    margin-bottom: 8px;
+}
+
+/* line 125, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_button.scss */
+.btn_3 {
+    display: inline-block;
+    font-size: 15px;
+    color: #1d272f;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+/* line 145, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_button.scss */
+.btn_3 img {
+    margin-left: 18px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-top: 2px;
+}
+
+/* line 151, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_button.scss */
+.btn_3:hover img {
+    transform: rotateX(-180deg);
+    margin-bottom: 7px;
+}
+
+.client-item-wrapper img {
+    filter: saturate(0);
+    opacity: 0.5;
+    margin: auto;
+}
+
+.client-item-wrapper img:hover {
+    filter: none;
+    opacity: 0.9;
+    transition: all 500ms;
+}
+
+.blog_part {
+    padding-top: 70px;
+    padding-bottom: 220px;
+    background-color: #fff;
+}
+
+@media (max-width: 576px) {
+    /* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part {
+        margin-bottom: 0px;
+        padding: 70px 0px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part {
+        margin-bottom: 0px;
+        padding: 70px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part {
+        margin-bottom: 0px;
+        padding: 70px 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* line 24, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog {
+        margin-bottom: 140px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 24, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog {
+        margin-bottom: 140px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 24, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog {
+        margin-bottom: 140px;
+        margin-top: 20px;
+    }
+}
+
+/* line 40, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card-img-top {
+    border-radius: 40px 0 40px 0;
+}
+
+/* line 43, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card {
+    border: 0px solid transparent;
+    border-radius: 0px;
+    background-color: transparent;
+    position: relative;
+}
+
+/* line 48, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card .card-body {
+    padding: 25px 10px 29px 40px;
+    background-color: #fff;
+    position: absolute;
+    left: 20px;
+    bottom: -140px;
+    box-shadow: -7.552px 9.326px 20px 0px rgba(1, 84, 85, 0.1);
+    border-radius: 40px 0 40px 0;
+}
+
+@media (max-width: 576px) {
+    /* line 48, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card .card-body {
+        padding: 15px;
+        left: 10px;
+        bottom: -140px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 48, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card .card-body {
+        padding: 15px;
+        left: 10px;
+        bottom: -140px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 48, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card .card-body {
+        padding: 20px;
+    }
+}
+
+/* line 72, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card .card-body a {
+    color: #f24946;
+    text-transform: uppercase;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+
+/* line 76, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+/*.blog_part .single-home-blog .card .card-body a:hover {
+    background: -webkit-linear-gradient(131deg, #f24946 0%, #f24946 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 97, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card span {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 97, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card span {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 97, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card span {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+/* line 83, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card .dot {
+    position: relative;
+    padding-left: 20px;
+}
+
+/* line 86, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card .dot:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 0;
+    background-color: #f24946;
+    border-radius: 50%;
+}
+
+/* line 97, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card span {
+    color: #8a8a8a;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+    /* line 97, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card span {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+/* line 119, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card h5 {
+    line-height: 1.5;
+    font-size: 20px;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+}
+
+@media (max-width: 576px) {
+    /* line 119, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card h5 {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 119, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card h5 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 119, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card h5 {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 119, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card h5 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}
+
+/* line 140, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+/*.blog_part .single-home-blog .card h5:hover {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    background: -webkit-linear-gradient(131deg, #f24946 0%, #f24946 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: 1s;
+}*/
+
+/* line 150, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card ul li {
+    display: inline-block;
+    color: #8a8a8a;
+    margin-right: 14px;
+}
+
+@media (max-width: 576px) {
+    /* line 150, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card ul li {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 150, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card ul li {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 150, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card ul li {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 150, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+    .blog_part .single-home-blog .card ul li {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div#ca-navbar {
+        background-color: var(--theme-color-2);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    header.header_area.sticky {
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header.header_area.sticky {
+        height: 70px;
+    }
+}
+
+/* line 166, E:/167 Bizcon Business/Bizcon_html/sass/_blog_part.scss */
+.blog_part .single-home-blog .card ul li span {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.client-item-wrapper {
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+}
+
+button.navbar-toggler {
+    filter: invert(100%);
+}
+
+button.navbar-toggler:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+#popup {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+}
+
+#popup div.content {
+    --margin-t: 110px;
+    margin-top: var(--margin-t);
+    background-color: #fff;
+    display: inline-block;
+    right: -20px;
+    position: absolute;
+    transform: translateX(-50%);
+    height: calc( 100% - calc(40px * 2) - calc(var(--margin-t) / 2) - 15px );
+    box-shadow: 0px 0px 30px 0 #000;
+}
+
+#popup img {
+    border-radius: 0;
+}
+
+#popup span.icon.cross:hover {
+    cursor: pointer;
+}
+
+#popup span.icon.cross::after {
+    position: absolute;
+    border-radius: 50%;
+    right: 20px;
+    top: 15px;
+    content: '\00d7';
+    font-size: 50px;
+    line-height: 45px;
+    text-align: center;
+    color: #000;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 10px 0 #000;*/
+}
+
+.hidden {
+    display: none;
+}
+
+#announcement {
+    background-color: #f24946;
+    bottom: 60px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 2147483647;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+#announcement .row {
+    display: flex;
+    align-items: center;
+}
+
+#announcement .col-xs-12 {
+    margin: 10px 0;
+}
+
+#announcement .row .title {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: all 0.5s ease;
+}
+
+#announcement .row .title:hover {
+    font-size: 1.4em;
+}
+
+#announcement a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#announcement a.button-2 {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+}
+
+#announcement a.button-2:hover {
+    background-color: #fff;
+    color: #f24946;
+}
+
